@@ -1,0 +1,325 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Preconnect", sans-serif;
+  color: #212121;
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  margin: 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px;
+}
+
+.header-logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 25%;
+  cursor: pointer;
+}
+.header-list {
+}
+.header-list-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  margin-top: 5%;
+  color: azure;
+}
+.header-list-item {
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.section1-text {
+  margin: 40px;
+  text-align: center;
+}
+.section1-name {
+  margin-bottom: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.section1-list {
+  line-height: 2.5;
+}
+.section1-list-item {
+  font-size: 24px;
+}
+
+.about-section1 {
+  display: flex;
+  gap: 65px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  width: 1200px;
+}
+.img-about-me {
+}
+.image-about-me {
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
+  filter: drop-shadow(4px 4px 40px rgb(238, 148, 148));
+  border-radius: 20%;
+  margin: 35px;
+}
+.text-about-me {
+  margin: 30px;
+  line-height: 1.9;
+}
+.name-about-me {
+  font-size: 40px;
+  font-weight: 800;
+}
+.desc-about-me {
+  font-size: 16px;
+}
+
+.section-forms {
+  margin-top: 60px;
+}
+
+.forms {
+  line-height: 2;
+  margin-top: 45px;
+}
+
+.section-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.section-name-forms {
+  font-size: 60px;
+  font-family: 800;
+  margin-top: 30px;
+}
+
+.section-desc-forms {
+  color: rgb(146, 146, 146);
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.label-form {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.form {
+  margin-top: 5px;
+  font-size: 35px;
+}
+.name-gallery {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+.image-section {
+  display: flex;
+  justify-content: s;
+}
+
+.img-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.image-section {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0.5, 0.5, 1);
+}
+
+.image-section:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(1, 1, 1, 1.5);
+}
+
+.phone-number {
+  font-size: 80px;
+  font-weight: 1000;
+  color: red;
+  background: #6b2727;
+  padding: 20px;
+  filter: drop-shadow(4px 4px 40px rgb(150, 0, 0));
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 14px;
+  margin-top: 10%;
+  border-top: 1px solid #ddd;
+}
