@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="header-container">
@@ -46,77 +47,72 @@
           Здесь у нас будут расположены все формы с урока
         </p>
         <div class="forms">
-          <form action="forms">
-            <div>
-              <label for="textId" class="label-form">Текст:</label>
+          <form action="index.html" method="post">
+            <fieldset class="label-form">
+              <legend>Text Input</legend>
+              <label for="text">Text:</label>
               <input
                 type="text"
+                id="text"
+                name="text"
                 size="50"
-                class="form"
-                name="introText"
-                id="textID"
+                placeholder="Enter text here"
               />
-            </div>
+            </fieldset>
 
-            <div>
-              <label for="password" class="label-form">Пароль:</label>
+            <fieldset class="label-form">
+              <legend>Password</legend>
+              <label for="password">Password:</label>
               <input
                 type="password"
-                size="50"
-                class="form"
-                name="introPassword"
-                id="passwordID"
+                id="password"
+                name="password"
+                size="30"
+                placeholder="Enter password"
               />
-            </div>
+            </fieldset>
 
-            <div>
-              <label for="checkbox" class="label-form">Чек-бокс:</label>
+            <fieldset class="label-form">
+              <legend>Checkbox</legend>
+              <label for="checkbox">Check me:</label>
               <input
                 type="checkbox"
-                checked
-                class="form"
-                name="introCheckbox"
-                id="checkboxID"
+                id="checkbox"
+                name="checkbox"
+                value="checked"
               />
-            </div>
+            </fieldset>
 
-            <div>
-              <label for="radio" class="label-form">Радио:</label>
-              <input type="radio" class="form" name="introRadio" id="radioID" />
-            </div>
-
-            <div>
-              <label for="reset" class="label-form">Очистить:</label>
+            <fieldset class="label-form">
+              <legend>Radio Buttons</legend>
+              <label for="radio1">Option 1</label>
               <input
-                type="reset"
-                value="очистити"
-                class="form"
-                name="introReset"
-                id="resetID"
+                type="radio"
+                id="radio1"
+                name="example-radio"
+                value="option1"
               />
-            </div>
-
-            <div>
-              <label for="button" class="label-form">Кнопка:</label>
+              <label for="radio2">Option 2</label>
               <input
-                type="button"
-                value="просто кнопка"
-                class="form"
-                name="introButton"
-                id="buttonID"
+                type="radio"
+                id="radio2"
+                name="example-radio"
+                value="option2"
               />
-            </div>
+            </fieldset>
 
-            <div>
-              <label for="file" class="label-form">Файл:</label>
-              <input
-                type="file"
-                size="50"
-                class="form"
-                name="introFile"
-                id="fileID"
-              />
-            </div>
+            <fieldset class="label-form">
+              <legend>File Upload</legend>
+              <label for="file">Choose a file:</label>
+              <input type="file" id="file" name="file" />
+            </fieldset>
+
+            <fieldset class="label-form">
+              <legend>Buttons</legend>
+              <input type="submit" id="submit" value="Submit" />
+              <input type="reset" id="reset" value="Reset" />
+              <input type="button" id="button" value="Click Me" />
+            </fieldset>
           </form>
         </div>
       </section>
